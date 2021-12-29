@@ -1,0 +1,17 @@
+首先從桌面創建資料夾/Desktop/git-repos/leetcode
+cd git-repos/leetcode
+輸入 git init 先做初始化的動作
+輸入 git status 可查看目前尚未add的file
+輸入 git add "filename" 可加入 or 輸入 git add . 可將整個資料夾加入
+輸入 git remote add "自訂名稱" "repo的url"
+輸入完成後 可輸入 git remote 查看當前的remote
+加入remote節點後 接著加入自己電腦的ssh公鑰到要的repos
+所以回到 terminal 輸入 ssh-genkey
+會看到公鑰的儲存路徑 (/Users/ted/.ssh/id_rsa)
+cd /Users/ted/.ssh/id_rsa
+cat id_rsa.pub => 為公鑰
+將cat id_ras.pub 複製並貼到git repos -> settings -> Deploy keys
+完成後回到 terminal 就可以push了
+輸入 git commit -m "更新內容" -> 輸入-m可以不用進去編輯器 若不小心進編輯器可以輸入兩個大寫z離開 更新內容為必填
+將內容commit完之後 再push到repos 
+輸入 git push -u "remote節點名稱" main
