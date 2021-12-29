@@ -14,4 +14,4 @@ cat id_rsa.pub => 為公鑰
 完成後回到 terminal 就可以push了
 輸入 git commit -m "更新內容" -> 輸入-m可以不用進去編輯器 若不小心進編輯器可以輸入兩個大寫z離開 更新內容為必填
 將內容commit完之後 再push到repos 
-輸入 git push -u "remote節點名稱" main
+輸入 git push "remote節點名稱" main
