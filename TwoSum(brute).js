@@ -3,6 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
+// number 1
 var twoSum = function (nums, target) {
   var x, y;
   for (x = 0; x < nums.length; x++) {
